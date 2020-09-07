@@ -1,0 +1,8 @@
+<footer>
+	<br />
+	<p>&copy; {{ now.Year }} - <a href="https://github.com/co1ncidence"><b>Made By nuaNce</b></a>.
+	{{- range .Site.Menus.footer }}
+	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
+        {{- end }}
+	</p>
+</footer>

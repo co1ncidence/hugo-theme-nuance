@@ -1,0 +1,27 @@
+{{ define "main" }}
+<br />
+	<main>
+		{{ $listtitle := .Title }}
+		{{ if or .Title .Content }}
+		<div>
+			{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+			{{ with .Content }}<div>{{ . }}</div>{{ end }}
+		</div>
+		{{ end }}
+
+		<ul>
+		    {{ range .Paginator.Pages }}
+		    <li>
+		        <div class="post-title">
+				{{ if eq $listtitle "Posts" }}
+				{{ .Date.Format "01-02-2006" }} - <a href="{{ .RelPermalink }}">{{.Title }}</a>
+				{{ else }}
+				    <a href="{{ .RelPermalink }}">{{.Title }}</a>
+				{{ end }}
+		        </div>
+		    </li>
+		    {{ end }}
+		</ul>
+		{{ partial "pagination.html" . }}
+	</main>
+{{ end }}
