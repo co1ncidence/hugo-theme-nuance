@@ -7,7 +7,7 @@
 </p>
 
 ## Features
-This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. And the theme also uses the user's local fonts, so no unnecessary inclusion of Google API. There is also some nice animations on link elements, with the links on the text, title, and nav elements all having their own unique effects.
+This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. And the theme also uses the user's local fonts, so no unnecessary inclusion of Google API. There is also some nice animations on links with the ones on text, title, and nav elements all having their own unique effects.
 
 > Note: All images and text are locked at an 800px width, so resize accordingly
 
