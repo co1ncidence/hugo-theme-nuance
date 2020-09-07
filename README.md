@@ -6,6 +6,11 @@
 
 </p>
 
+## Features
+This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. And the theme also uses the user's local fonts, so no unnecessary inclusion of Google API.
+
+> Note: All images and text are locked at an 800px width, so resize accordingly
+
 ## Installation
 First, clone this repository into your `themes/` folder from the root of your Hugo site:
 ```sh
