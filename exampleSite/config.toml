@@ -1,0 +1,42 @@
+# publishdir = ".."
+baseURL = "http:localhost:1313/"
+languageCode = "en-us"
+title = "website-title"
+theme = "hugo-theme-nuance"
+paginate = 10
+
+[author]
+  name = "authorname"
+
+[params]
+   author = "authorname"
+   description = "your website description"
+   dateFormat = "2006-01-02"
+   paginationSinglePost = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About Me -"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "archive"
+    name = "Posts -"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags -"
+    url = "/tags/"
+    weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
