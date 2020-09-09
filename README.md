@@ -2,7 +2,13 @@
 
 <p align="center"
 
-![img](images/screenshot.png)
+![img](images/screenshot1.png)
+
+</p>
+
+<p align="center"
+
+![img](images/screenshot2.png)
 
 </p>
 
