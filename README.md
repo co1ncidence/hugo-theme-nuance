@@ -13,9 +13,11 @@
 </p>
 
 ## Features
-This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. And the theme also uses the user's local fonts, so no unnecessary inclusion of Google API. There is also some nice animations on links with the ones on text, title, and nav elements all having their own unique effects.
+This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. And the theme also uses the user's local fonts, so no unnecessary inclusion of Google API. There is also some nice animations on links with the ones on text, title, and nav elements all having their own unique effects. I've also made the code blocks and tables stand out a bit more as a nice touch
 
-> Note: All images and text are locked at an 800px width, so resize accordingly
+> Note: since everything is in monospace font, the width is in characters (80) instead of pixels, which means it can vary based on the user's set font.
+
+I highly recommend, however, that you keep an agnostic font stack in the CSS of this theme, I have a good one set already but you can mess with it if you'd like.
 
 ## Installation
 First, clone this repository into your `themes/` folder from the root of your Hugo site:
