@@ -1,4 +1,10 @@
 {{ define "main" }}
+	<style>
+		@font-face {
+			font-family: "Apercu Mono"
+			src: url(fonts/'Apercu Mono.otf');
+			}
+	</style>
 	<main>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
