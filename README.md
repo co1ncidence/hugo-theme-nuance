@@ -2,13 +2,13 @@
 
 <p align="center"
 
-![img](images/screenshot1.png)
+![img](images/screenshot2.png)
 
 </p>
 
 <p align="center"
 
-![img](images/screenshot2.png)
+![img](images/screenshot.png)
 
 </p>
 
