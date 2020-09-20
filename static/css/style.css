@@ -1,40 +1,61 @@
+/* ---------  Root Vars ---------- */
+:root {
+  --bg1:      #f5f5f5;
+  --bg2:      #e7e7e7;
+  --bg3:      #ececec;
+  --fg1:      #535353;
+  --fg2:      #494949;
+  --fg3:      #363636;
+  --title1:   #ac8a8c;
+  --title2:   #C49EA0;
+  --link1:    #617878;
+  --link2:    #7B9899;
+  --seltext:  #C7ECF7;
+}
+
+@media(prefers-color-scheme:dark) {
+  :root {
+    --bg1:      #363636;
+    --bg2:      #494949;
+    --bg3:      #535353;
+    --fg1:      #ececec;
+    --fg2:      #e7e7e7;
+    --fg3:      #f5f5f5;
+    --title1:   #C49EA0;
+    --title2:   #ac8a8c;
+    --link1:    #93a8a8;
+    --link2:    #9eb1b1;
+    --seltext:  #C7ECF7;
+  }
+}
+
+/* ---------  Main Things ---------  */
+
 html {
   overflow-y: scroll;
-  background-color: #f0f0f0;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  max-width: 800px;
+  max-width: 900px;
   width: 100vw;
-  margin: 10vh auto;
-  padding-right: 10ch;
-  padding-left: 10ch;
-  padding-top: 7ch;
-  padding-bottom: 7ch;
-  font-family: "Lato", "SF Pro Text", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #f5f5f5;
-  color: #535353;
-  border-radius: 30px;
-  -webkit-box-shadow: 10px 10px 60px -25px rgba(54,54,54,0.6);
-  -moz-box-shadow: 10px 10px 60px -25px rgba(54,54,54,0.6);
-  box-shadow: 10px 10px 60px -25px rgba(54,54,54,0.6);
+  margin: 0 auto;
+  padding-top: 3ch;
+  padding-bottom: 3ch;
+  padding-left: 3ch;
+  padding-right: 3ch;
+  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  font-size: 20px;
+  line-height: 1.8em;
+  background-color: var(--bg1);
+  color: var(--fg1);
 }
+
+/* ---------  Headers ---------  */
 
 header {
-  color: #535353;
+  color: var(--fg1);
   font-size: 20px;
-}
-
-nav {
-  width: 100%;
-  color: #617878;
-  padding-top: 0.6em;
-  padding-bottom: 0.3em;
-  border-bottom: 3px solid #535353;
-  margin-bottom: -1em;
-  font-family: "Roboto Mono Light", "JetBrains Mono Light", "IBM Plex Mon Light", "SF Mono Light", "Consolas Light", monospace;
 }
 
 h1,
@@ -43,56 +64,89 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Mono Light", "JetBrains Mono Light", "IBM Plex Mon Light", "SF Mono Light", "Consolas Light", monospace;
-  font-weight: bold;
-  color: #494949;
+  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  color: var(--fg2);
   line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
 }
+
+/* ---------  Time Published ---------  */
 
 time {
-  font-weight: bold;
-  color: #494949;
+  display: block;
+  color: var(--fg2);
   line-height: 2;
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
 }
 
+/* ---------  Website Title ---------  */
 
 .title {
-  font-family: "Roboto Mono", "JetBrains Mono", "IBM Plex Mono", "SF Mono", "Consolas", monospace;
-  font-size: 2em;
-  color: #ac8a8c;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 4px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.05s;
+  text-align: center;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid var(--bg1);
+  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  font-size: 3em;
+  color: var(--title1);
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
 }
 
 .title:hover {
-  color: #C49EA0;
-  text-decoration: none;
-  background-size: 100% 4px;
+  color: var(--title2);
 }
 
+/* ---------  Nav bar ---------  */
+
+nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
+  background-color: var(--bg3);
+  color: var(--link1);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+}
+
+/* ---------  Links ---------  */
+
 a {
-  color: #617878;
+  color: var(--link1);
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #7B9899;
+  color: var(--link2);
   text-decoration: none;
 }
+
+/* ---------  Code ---------  */
 
 p > code {
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  color: #f5f5f5;
-  border-radius: 3px;
-  background-color: #272822;
+  padding-bottom: 0.3em;
+  color: var(--bg1);
+  background-color: var(--fg3);
   font-size: 0.9em;
 }
 
@@ -104,18 +158,19 @@ pre {
 	overflow-y: hidden;
 	font-size: 16px;
 	line-height: 1.8;
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 	padding: 28px;
   border: 5px solid #272822;
-  border-radius: 10px;
-  -webkit-box-shadow: 10px 8px 60px -25px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 8px 60px -25px rgba(0,0,0,0.75);
-  box-shadow: 10px 8px 60px -25px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
 }
 
+/* ---------- Articles --------- */
+
 article {
-  padding:24px 0
+  padding: 24px 0;
 }
 
 .center {
@@ -125,15 +180,16 @@ article {
   width: 100%;
 }
 
+/* ---------  Images ---------  */
+
 .image, figure img, img {
   width: 100%;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 25px;
-  -webkit-box-shadow: 10px 10px 38px -22px rgba(0,0,0,0.8);
-  -moz-box-shadow: 10px 10px 38px -22px rgba(0,0,0,0.8);
-  box-shadow: 10px 10px 38px -22px rgba(0,0,0,0.8);
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
+
+/* ---------  Quotes ---------  */
 
 blockquote {
   margin-left: 0em;
@@ -141,59 +197,60 @@ blockquote {
   margin-bottom: 40px;
   padding: 0.2em 2em;
   position: relative;
-  color: #f0f0f0;
-  background-color: #676767;
-  border-radius: 10px;
+  color: var(--fg3);
+  background-color: var(--bg2);
+  border-left: 3px solid var(--fg2);
   font-size: 16px;
-  -webkit-box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.3);
-  -moz-box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.3);
-  box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
 }
+
+/* ---------  Table ---------  */
 
 table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  color: #535353;
-  background-color: #f5f5f5;
+  color: var(--fg1);
+  background-color: var(--bg1);
 }
 
 table th {
-  background-color: #e7e7e7;
-  color: #494949;
+  background-color: var(--fg2);
+  color: var(--bg2);
 }
 
 table th, table td {
   padding: 5px 10px;
-  border-bottom: 2px solid #494949;
-  border-right: 4px solid #f5f5f5;
+  border-bottom: 2px solid var(--fg2);
+  border-right: 4px solid var(--bg1);
 }
 
 table thead {
   background-color: transparent;
 }
 
+/* ---------  Scrollbar ---------  */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
 
-::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
     background: #dddddd;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
     background: #c2c2c2;
 }
 
-::-webkit-scrollbar-thumb:window-inactive {
-    background: #38322e;
+/* ---------  Text Selection ---------  */
+
+::-moz-selection {
+  background: var(--seltext);
+}
+
+::selection {
+  background: var(--seltext);
 }

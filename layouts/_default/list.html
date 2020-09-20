@@ -9,12 +9,12 @@
 		</div>
 		{{ end }}
 
-		<ul>
+		<ul style="list-style-type:none;">
 		    {{ range .Paginator.Pages }}
 		    <li>
 		        <div class="post-title">
 				{{ if eq $listtitle "Posts" }}
-				{{ .Date.Format "01-02-2006" }} - <a href="{{ .RelPermalink }}">{{.Title }}</a>
+				<strong>{{ .Date.Format "01/02/2006" }}</strong> - <a href="{{ .RelPermalink }}">{{.Title }}</a>
 				{{ else }}
 				    <a href="{{ .RelPermalink }}">{{.Title }}</a>
 				{{ end }}
