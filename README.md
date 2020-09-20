@@ -2,18 +2,18 @@
 
 <p align="center"
 
-![img](https://i.postimg.cc/zvc7yWVB/image.png)
+![img](https://i.postimg.cc/h4QD4cmp/image.png)
 
 </p>
 
 <p align="center"
 
-![img](https://i.postimg.cc/x1H5dXYf/image.png)
+![img](https://i.postimg.cc/Kzk2YD1R/image.png)
 
 </p>
 
 ## Features
-This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. And the theme also uses the user's local fonts, so no unnecessary inclusion of Google API. There is also some nice animations on links with the ones on text, title, and nav elements all having their own unique effects. I've also made the code blocks and tables stand out a bit more as a nice touch
+This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. The theme also uses only a single custom font, it is currently hosted on Google fonts but I will make it native as soon as I can. There is also some nice animations on links with the ones on text, title, and nav elements all having their own unique effects. I've also made the code blocks and tables stand out a bit more as a nice touch
 
 > Note: since everything is in monospace font, the width is in characters (80) instead of pixels, which means it can vary based on the user's set font.
 

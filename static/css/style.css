@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/recursive/v21/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadCCk310tQ1TDA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/recursive/v21/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadCCk317tQ0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* ---------  Root Vars ---------- */
 :root {
   --bg1:      #f5f5f5;
@@ -37,14 +55,14 @@ html {
 }
 
 body {
-  max-width: 900px;
+  max-width: 800px;
   width: 100vw;
   margin: 0 auto;
   padding-top: 3ch;
   padding-bottom: 3ch;
   padding-left: 3ch;
   padding-right: 3ch;
-  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  font-family: 'Recursive', sans-serif;
   font-size: 20px;
   line-height: 1.8em;
   background-color: var(--bg1);
@@ -64,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  font-family: 'Recursive', sans-serif;
   color: var(--fg2);
   line-height: 1.2;
   text-rendering: optimizeLegibility;
@@ -94,7 +112,7 @@ time {
   padding-top: 40px;
   padding-bottom: 30px;
   border-bottom: 5px solid var(--bg1);
-  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  font-family: 'Recursive', sans-serif;
   font-size: 3em;
   color: var(--title1);
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
@@ -111,13 +129,13 @@ nav {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 70%;
+  width: 75%;
   background-color: var(--bg3);
   color: var(--link1);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
   margin-bottom: 1em;
-  font-family: "Recursive Mono Linear Static", "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
+  font-family: 'Recursive', sans-serif;
   font-size: 1.5em;
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
   -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
@@ -139,6 +157,10 @@ a:focus {
 }
 
 /* ---------  Code ---------  */
+
+code {
+  font-family: monospace;
+}
 
 p > code {
   padding-left: 0.5em;
