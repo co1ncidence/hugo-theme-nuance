@@ -2,7 +2,7 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			<b><time>{{ .Date.Format (default "01/02/2006" .Site.Params.dateFmt) }}</time></b>
+			<!-- <b><time>{{ .Date.Format (default "Published: 01/02/2006" .Site.Params.dateFmt) }}</time></b> -->
 		       {{ range .Params.tags }}
         	       {{ end }}
 

@@ -2,13 +2,13 @@
 
 <p align="center"
 
-![img](https://i.postimg.cc/h4QD4cmp/image.png)
+![img](https://i.postimg.cc/7PdPc3Q9/image.png)
 
 </p>
 
 <p align="center"
 
-![img](https://i.postimg.cc/Kzk2YD1R/image.png)
+![img](https://i.postimg.cc/76bDth3j/image.png)
 
 </p>
 
