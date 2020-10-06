@@ -1,6 +1,7 @@
+/* import fonts */
 @import "fonts.css";
 
-/* ---------  Root Vars ---------- */
+/* Root Vars */
 :root {
   --bg0:      #f9f9f9;
   --bg1:      #fefefe;
@@ -18,7 +19,7 @@
   --seltext:  #C7ECF7;
 }
 
-/* ---------  Main Things ---------  */
+/* Main Things */
 
 html {
   overflow-y: scroll;
@@ -45,7 +46,7 @@ body {
   box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
 }
 
-/* ---------  Headers ---------  */
+/* Headers */
 
 header {
   color: var(--title1);
@@ -83,7 +84,7 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* ---------- Post Title ------------ */
+/* Post Title */
 
 .postitle {
   color: var(--title1);
@@ -95,6 +96,13 @@ h6 {
   background-color: var(--fg1);
   text-decoration: none;
 }
+
+.post-title {
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+/* h1 hover */
 
 h1:hover {
   text-align: center;
@@ -115,7 +123,7 @@ h1:hover {
   box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
 }
 
-/* ---------  Time Published ---------  */
+/* Time Published */
 
 time {
   display: block;
@@ -125,10 +133,10 @@ time {
   margin-bottom: -0.7em;
 }
 
-/* ---------  Website Title ---------  */
+/* Website Title */
 
 .title {
-  width: 70%;
+  width: 60%;
   margin-left: 0;
   margin-right: auto;
   margin-bottom: 30px;
@@ -139,8 +147,8 @@ time {
   padding-bottom: 40px;
   font-family: 'Crimson Pro', serif;
   font-size: 3em;
-  color: #4c4c4c;
-  border: 6px solid var(--border);
+  color: var(--border);
+  border: 6px solid var(--title2);
   background-color: #f5f5f5;
   -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
   -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
@@ -151,7 +159,7 @@ time {
   color: var(--title2);
 }
 
-/* ---------  Nav bar ---------  */
+/* Nav bar */
 
 nav {
   display: block;
@@ -159,13 +167,11 @@ nav {
   margin-right: 0;
   text-align: center;
   width: 85%;
-  color: var(--link1);
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 1em;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4em;
-  color: var(--title1);
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.5em;
   border: 6px solid var(--border);
   background-color: #f5f5f5;
   -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
@@ -173,7 +179,7 @@ nav {
   box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
 }
 
-/* ---------  Links ---------  */
+/* Links */
 
 a {
   color: var(--link1);
@@ -186,7 +192,7 @@ a:focus {
   text-decoration: none;
 }
 
-/* ---------  Code ---------  */
+/* Code */
 
 code {
   font-family: monospace;
@@ -221,7 +227,7 @@ pre {
   box-shadow: 10px 10px 0px 0px rgba(209,209,209,1);
 }
 
-/* ---------- Articles --------- */
+/* Articles */
 
 article {
   padding: 24px 0;
@@ -234,7 +240,7 @@ article {
   width: 100%;
 }
 
-/* ---------  Images ---------  */
+/* Images */
 
 .image, figure img, img {
   width: 100%;
@@ -248,7 +254,7 @@ article {
   margin: 0 auto;
 }
 
-/* ---------  Quotes ---------  */
+/* Quotes */
 
 blockquote {
   margin-left: 0em;
@@ -262,7 +268,7 @@ blockquote {
   font-size: 16px;
 }
 
-/* ---------  Table ---------  */
+/* Table */
 
 table {
   width: 100%;
@@ -287,7 +293,7 @@ table thead {
   background-color: transparent;
 }
 
-/* ---------  Scrollbar ---------  */
+/* Scrollbar */
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -303,7 +309,7 @@ table thead {
     border: 3px solid #272822;
 }
 
-/* ---------  Text Selection ---------  */
+/* Text Selection */
 
 ::-moz-selection {
   background: var(--seltext);
@@ -311,9 +317,4 @@ table thead {
 
 ::selection {
   background: var(--seltext);
-}
-
-.post-title {
-  margin-left: 200px;
-  font-size: 20px;
 }

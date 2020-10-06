@@ -1,6 +1,15 @@
 <header>
+	<div style="display: block;
+							float: right;
+							font-family: 'Crimson Pro', serif;
+							color: #363636;
+							background-color: #f5f5f5;
+							border: 6px solid #575757;
+							padding: 20px;
+							box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
+							margin-right: 30px;"
+							>{{ .Site.Params.subtitle }}</div><br>
 	<a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-	<!-- <div style="float: right; font-family: monospace;">{{ .Site.Params.subtitle }}</div><br> -->
 	<p>
 	<nav>
 			{{ with .Site.Menus.main }}
