@@ -142,7 +142,7 @@ time {
   margin-right: auto;
   margin-bottom: 30px;
   text-align: center;
-  font-family: 'Inter var', 'Inter', sans-serif;
+  font-family: 'Fira Code', monospace;
   font-size: 1.3em;
 }
 
@@ -156,7 +156,7 @@ nav {
   padding-top: 20px;
   padding-bottom: 12px;
   margin-bottom: 1em;
-  font-family: 'Inter var', 'Inter', sans-serif;
+  font-family: 'Fira Code', monospace;
   font-size: 1.2em;
   border-bottom: 5px solid var(--border);
 }
