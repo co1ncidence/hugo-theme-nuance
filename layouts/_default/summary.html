@@ -1,12 +1,16 @@
 <article>
 		<h1><a class="postitle" href="{{ .Permalink }}">{{ .Title }}</a></h1>
-	<b><time>{{ .Date.Format (default "Published: 01/02/2006" .Site.Params.dateFmt) }}</time></b>
+				<p style="text-align:left;">
+						<b>{{ .Date.Format (default "Published: 01/02 — 2006" .Site.Params.dateFmt) }}</b>
+					<span style="float:right;">
+						<b>{{ .ReadingTime }} Min.</b>
+					</span>
+				</p>
 	{{ range .Params.tags }}
 	{{ end }}
 	<div>
 		{{ .Summary }}
 		{{ if .Truncated }}
-					<!-- <a href="{{ .Permalink }}">Read more...</a> -->
 		{{ end }}
 	</div>
 </article>

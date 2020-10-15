@@ -2,14 +2,17 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			<!-- <b><time>{{ .Date.Format (default "Published: 01/02/2006" .Site.Params.dateFmt) }}</time></b> -->
-		       {{ range .Params.tags }}
-        	       {{ end }}
-
+				<p style="text-align:left;">
+						<b>{{ .Date.Format (default "Published: 01/02 — 2006" .Site.Params.dateFmt) }}</b>
+					<span style="float:right;">
+						<b>{{ .ReadingTime }} Min.</b>
+					</span>
+				</p>
+		    {{ range .Params.tags }}
+          {{ end }}
 			<div>
 				{{ .Content }}
 			</div>
 		</article>
 	</main>
-{{ partial "sidebar.html" . }}
 {{ end }}

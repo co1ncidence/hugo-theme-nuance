@@ -13,7 +13,7 @@
 		    <li>
 		        <div class="post-title">
 				{{ if eq $listtitle "Posts" }}
-				<strong>{{ .Date.Format "01/02/2006" }}</strong> - <a style="text-decoration: none" href="{{ .RelPermalink }}">{{.Title }}</a>
+				<strong>{{ .Date.Format "01/02/2006" }} ---> </strong><a style="text-decoration: none" href="{{ .RelPermalink }}">{{.Title }}</a>
 				{{ else }}
 				    <a href="{{ .RelPermalink }}">{{.Title }}</a>
 				{{ end }}

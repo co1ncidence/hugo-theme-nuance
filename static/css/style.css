@@ -1,20 +1,19 @@
 /* import fonts */
-@import "fonts.css";
+@import url("https://rsms.me/inter/inter.css");
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css);
 
 /* Root Vars */
 :root {
-  --bg0:      #f9f9f9;
-  --bg1:      #fefefe;
-  --bg2:      #f7f2f7;
-  --bg3:      #f7f2f7;
-  --fg1:      #363636;
+  --bg0:      #f5f5f5;
+  --bg1:      #f0f0f0;
+  --bg2:      #e7e7e7;
+  --fg1:      #575757;
   --fg2:      #363636;
-  --fg3:      #2c2c2c;
   --title1:   #f0f0f0;
-  --title2:   #ba92a5;
+  --title2:   #d8c2cd;
   --link1:    #538083;
   --link2:    #63979b;
-  --code:     #272822;
+  --code:     #d9d9d9;
   --border:   #575757;
   --seltext:  #C7ECF7;
 }
@@ -25,25 +24,22 @@ html {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg0);
+  font-size: 18px;
 }
 
 body {
-  max-width: 800px;
+  max-width: 700px;
   width: 100vw;
-  margin: 10vh auto;
+  margin: 0 auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 8vw;
   padding-right: 8vw;
-  font-family: 'Crimson Pro', serif;
-  font-size: 18px;
+  font-family: 'Inter var', sans-serif;
+  font-size: 1em;
   line-height: 35px;
-  background-color: var(--bg1);
+  background-color: var(--bg0);
   color: var(--fg1);
-  border: 10px solid var(--border);
-  -webkit-box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
-  -moz-box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
-  box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
 }
 
 /* Headers */
@@ -54,22 +50,21 @@ header {
 }
 
 h1 {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
+  text-align: left;
+  font-family: 'Inter var', sans-serif;
   font-size: 32px;
   line-height: 1.3;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 30px;
-  margin-left: -10px;
+  padding: 30px;
+  margin-bottom: 45px;
+  margin-left: -5px;
   text-rendering: optimizeLegibility;
-  background-color: var(--bg1);
   color: var(--title1);
-  border: 2px solid var(--border);
   background-color: var(--border);
-  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
+  transition: 0.3s all;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
+  box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
 }
 
 h2,
@@ -77,11 +72,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter var', sans-serif;
   font-weight: 600;
-  color: var(--fg2);
+  color: var(--fg1);
   line-height: 1.2;
   text-rendering: optimizeLegibility;
+}
+
+h2:before {
+  color: var(--title2);
+  content: "## ";
+  margin-left: -43px;
+}
+
+h3:before {
+  color: var(--title2);
+  content: "### ";
+  margin-left: -49px;
 }
 
 /* Post Title */
@@ -93,41 +100,22 @@ h6 {
 
 .postitle:hover {
   color: var(--title1);
-  background-color: var(--fg1);
   text-decoration: none;
 }
 
-.post-title {
-  margin-left: 200px;
-  font-size: 20px;
+.postitle:before {
+  content: "--> ";
 }
 
-/* h1 hover */
-
-h1:hover {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  line-height: 1.3;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 30px;
-  margin-left: -10px;
-  text-rendering: optimizeLegibility;
-  background-color: var(--bg1);
-  color: var(--title1);
-  border: 2px solid var(--fg1);
-  background-color: var(--fg1);
-  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
+.postitle:hover:before {
+  content: "---> "
 }
 
 /* Time Published */
 
 time {
   display: block;
-  color: var(--fg2);
+  color: var(--fg1);
   line-height: 2;
   margin-top: 1em;
   margin-bottom: -0.7em;
@@ -136,27 +124,30 @@ time {
 /* Website Title */
 
 .title {
-  width: 60%;
-  margin-left: 0;
+  width: 100%;
+  margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   text-decoration: none;
   text-align: center;
   display: block;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Fira Code', monospace;
   font-size: 3em;
-  color: var(--border);
-  border: 6px solid var(--title2);
-  background-color: #f5f5f5;
-  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
+  color: var(--fg1);
 }
 
 .title:hover {
-  color: var(--title2);
+  color: #898989;
+}
+
+.subtitle {
+  color: #898989;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.3em;
 }
 
 /* Nav bar */
@@ -164,19 +155,15 @@ time {
 nav {
   display: block;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
   text-align: center;
-  width: 85%;
+  width: 95%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   margin-bottom: 1em;
-  font-family: 'Crimson Pro', serif;
-  font-size: 1.5em;
-  border: 6px solid var(--border);
-  background-color: #f5f5f5;
-  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
-  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
+  font-family: 'Fira Code', sans-serif;
+  font-size: 1.2em;
+  border-bottom: 5px solid var(--border);
 }
 
 /* Links */
@@ -195,25 +182,26 @@ a:focus {
 /* Code */
 
 code {
-  font-family: monospace;
+  font-family: "Fira Code", monospace;
 }
 
 p > code {
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   margin-right: 0.1em;
   margin-left: 0.1em;
-  color: var(--bg1);
-  background-color: var(--code);
   font-size: 0.9em;
+  color: var(--fg1);
+  background-color: var(--code);
+  border-radius: 3px;
 }
 
 pre {
   box-sizing: border-box;
   white-space: pre;
-	width: 100%;
+	width: 110%;
 	overflow: auto;
 	overflow-y: hidden;
 	font-size: 16px;
@@ -221,10 +209,12 @@ pre {
   padding: 30px;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: -10px;
-  -webkit-box-shadow: 10px 10px 0px 0px rgba(209,209,209,1);
-  -moz-box-shadow: 10px 10px 0px 0px rgba(209,209,209,1);
-  box-shadow: 10px 10px 0px 0px rgba(209,209,209,1);
+  margin-left: -5%;
+  border: 3px solid #d7d7d7;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
+  box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
 }
 
 /* Articles */
@@ -245,27 +235,25 @@ article {
 .image, figure img, img {
   width: 100%;
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-
-.mid-image, figure.mid img, img[src*="mid"] {)
-  width: 50%;
-  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
+  box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
+  border-radius: 10px;
 }
 
 /* Quotes */
 
 blockquote {
-  margin-left: 0em;
+  width: 100%;
+  margin-left: -20px;
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 0.2em 2em;
   position: relative;
-  color: var(--fg3);
-  background-color: #f4f4f4;
-  border-left: 6px solid var(--fg3);
-  font-size: 16px;
+  color: var(--fg2);
+  border-left: 6px solid var(--title2);
 }
 
 /* Table */
@@ -275,18 +263,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   color: var(--fg1);
-  background-color: var(--bg1);
+  background-color: var(--bg0);
 }
 
 table th {
-  background-color: var(--fg2);
+  background-color: var(--fg1);
   color: var(--bg2);
 }
 
 table th, table td {
   padding: 5px 10px;
-  border-bottom: 2px solid var(--fg2);
-  border-right: 4px solid var(--bg1);
+  border-bottom: 2px solid var(--fg1);
+  border-right: 4px solid var(--bg0);
 }
 
 table thead {
@@ -300,13 +288,11 @@ table thead {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f0f0f0;
-    border: 3px solid #272822;
+    background: #4c4c4c;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #d9d9d9;
-    border: 3px solid #272822;
+    background: #636363;
 }
 
 /* Text Selection */

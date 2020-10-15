@@ -2,13 +2,19 @@
 
 <p align="center"
 
-![img](https://i.postimg.cc/CMH4m3hW/image.png)
+![img](https://i.postimg.cc/ncb1jK8m/image.png)
 
 </p>
 
 <p align="center"
 
-![img](https://i.postimg.cc/FsTVQ0Jp/image.png)
+![img](https://i.postimg.cc/T3TqQR3Y/image.png)
+
+</p>
+
+<p align="center"
+
+![img](https://i.postimg.cc/VN69QDtx/image.png)
 
 </p>
 
@@ -16,9 +22,13 @@
 
 [Theme Demo, my own blog :P](https://co1ncidence.github.io)
 
-This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. The theme also uses only a single custom font, it is currently hosted on Google fonts but I will make it native as soon as I can. There is also some nice animations on links with the ones on text, title, and nav elements all having their own unique effects. I've also made the code blocks and tables stand out a bit more as a nice touch
+This is meant to be an extremely minimal blog theme, with only what you really need for a blog and no extra bloat. There really isn't many special features, just clean and efficient CSS throughout. The theme uses the following fonts:
+  - Fira Code, hosted [jsdeliver](https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css)
+  - Inter, hosted on [the creator's website](https://rsms.me/inter/inter.css)
 
-> Note: this site looks like absolute dogshit if it's width is less than 800px, so expect the experience on mobile devices to erm, not be so optimal. I will try and fix this as soon as I can.
+There is also some nice animations on links with the ones on text, title, and nav elements all having their own unique effects. I've also made the code blocks and tables stand out a bit more as a nice touch. Headers 2 and 3 have a corresponding number of dashes behind them code blocks are slightly wider than texts and have inset shadows and monokai light theme. There are also some other small things but I don't care to mention them here.
+
+> Note: mobile support is a WIP
 
 ## Installation
 First, clone this repository into your `themes/` folder from the root of your Hugo site:
