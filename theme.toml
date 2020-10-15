@@ -1,17 +1,17 @@
-name = "smol"
-license = "MIT"
-licenselink = "https://github.com/colorchestra/smol/blob/master/LICENSE.md"
-description = "Minimal Hugo theme using a Monospace font and without any tracking or external dependencies."
-homepage = "https://github.com/colorchestra/smol"
-tags = ["blog", "minimal", "monospace", "dark mode", "simple", "clean", "light", "responsive", "fast", "no-js", "no-tracking", "privacy"]
+name = "nuance"
+license = "GPL v3.0"
+licenselink = "https://github.com/co1ncidence/hugo-theme-nuance/blob/master/LICENSE.md"
+description = "Minimal hugo theme with clean CSS and a legible design"
+homepage = "https://github.com/co1ncidence/hugo-theme-nuance"
+tags = ["blog", "minimal", "monospace", "simple", "clean", "light", "responsive", "fast", "no-js", "no-tracking", "privacy"]
 features = ["blog", "privacy", "responsive", "fast"]
-min_version = "0.20"
+min_version = "1.00"
 
 [author]
-  name = "morph"
-  homepage = "morph.sh"
+  name = "nuaNce"
+  homepage = "https://co1ncidence.github.io"
 
 [original]
-  author = "Vimux"
-  homepage = "https://github.com/Vimux"
-  repo = "https://github.com/colorchestra/blank"
+  author = "nuance"
+  homepage = "https://co1ncidence.github.io"
+  repo = "https://github.com/co1ncidence"
