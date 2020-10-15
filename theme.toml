@@ -5,7 +5,7 @@ description = "Minimal hugo theme with clean CSS and a legible design"
 homepage = "https://github.com/co1ncidence/hugo-theme-nuance"
 tags = ["blog", "minimal", "monospace", "simple", "clean", "light", "responsive", "fast", "no-js", "no-tracking", "privacy"]
 features = ["blog", "privacy", "responsive", "fast"]
-min_version = "1.00"
+min_version = "0.3"
 
 [author]
   name = "nuaNce"
