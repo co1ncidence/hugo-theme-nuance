@@ -3,7 +3,7 @@
 				<p style="text-align:left;">
 						<b>{{ .Date.Format (default "Published: 01/02 — 2006" .Site.Params.dateFmt) }}</b>
 					<span style="float:right;">
-						<b>{{ .ReadingTime }} Min.</b>
+						<b>{{ .WordCount }} Words, {{ .ReadingTime }} Min.</b>
 					</span>
 				</p>
 	{{ range .Params.tags }}

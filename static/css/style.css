@@ -1,6 +1,6 @@
 /* import fonts */
 @import url("https://rsms.me/inter/inter.css");
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css);
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css");
 
 /* Root Vars */
 :root {
@@ -14,8 +14,23 @@
   --link1:    #538083;
   --link2:    #63979b;
   --code:     #d9d9d9;
-  --border:   #575757;
   --seltext:  #C7ECF7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg0:      #2c2c2c;
+    --bg1:      #363636;
+    --bg2:      #4c4c4c;
+    --fg1:      #e7e7e7;
+    --fg2:      #d9d9d9;
+    --title1:   #363636;
+    --title2:   #AC8AAC;
+    --link1:    #538083;
+    --link2:    #63979b;
+    --code:     #575757;
+    --seltext:  #C7ECF7;
+  }
 }
 
 /* Main Things */
@@ -58,12 +73,12 @@ h1 {
   margin-left: -5px;
   text-rendering: optimizeLegibility;
   color: var(--title1);
-  background-color: var(--border);
+  background-color: var(--fg1);
   transition: 0.3s all;
   border-radius: 10px;
-  -webkit-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
-  box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 50px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 50px -20px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 50px -20px rgba(0,0,0,0.75);
 }
 
 h2,
@@ -88,6 +103,12 @@ h3:before {
   color: var(--title2);
   content: "### ";
   margin-left: -49px;
+}
+
+h4:before {
+  color: var(--title2);
+  content: "#### ";
+  margin-left: -53px;
 }
 
 /* Post Title */
@@ -158,7 +179,7 @@ nav {
   margin-bottom: 1em;
   font-family: 'Fira Code', monospace;
   font-size: 1.2em;
-  border-bottom: 5px solid var(--border);
+  border-bottom: 5px solid var(--fg1);
 }
 
 /* Links */
@@ -203,7 +224,7 @@ pre {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: -5%;
-  border: 3px solid #d7d7d7;
+  border: 3px solid var(--bg2);
   border-radius: 10px;
   -webkit-box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
   -moz-box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
@@ -228,10 +249,10 @@ article {
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
-  box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
   border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.5);
+  box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.5);
 }
 
 /* Quotes */
@@ -281,13 +302,4 @@ table thead {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #636363;
-}
-
-/* Text Selection */
-::-moz-selection {
-  background: var(--seltext);
-}
-
-::selection {
-  background: var(--seltext);
 }
