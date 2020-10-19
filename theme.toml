@@ -1,5 +1,5 @@
 name = "nuance"
-license = "GPL v3.0"
+license = "BSD 3-Clause License"
 licenselink = "https://github.com/co1ncidence/hugo-theme-nuance/blob/master/LICENSE.md"
 description = "Minimal hugo theme with clean CSS and a legible design"
 homepage = "https://github.com/co1ncidence/hugo-theme-nuance"
@@ -10,8 +10,3 @@ min_version = "0.3"
 [author]
   name = "nuaNce"
   homepage = "https://co1ncidence.github.io"
-
-[original]
-  author = "nuance"
-  homepage = "https://co1ncidence.github.io"
-  repo = "https://github.com/co1ncidence"
