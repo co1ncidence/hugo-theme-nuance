@@ -1,6 +1,6 @@
 /* import fonts */
+@import url(iosevka.css);
 @import url("https://rsms.me/inter/inter.css");
-@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css");
 
 /* Root Vars */
 :root {
@@ -14,22 +14,20 @@
   --link1:    #538083;
   --link2:    #63979b;
   --code:     #d2d2d2;
-  --seltext:  #C7ECF7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg0:      #1c1c1c;
-    --bg1:      #262626;
-    --bg2:      #303030;
+    --bg0:      #262626;
+    --bg1:      #303030;
+    --bg2:      #393939;
     --fg1:      #e0e0e0;
     --fg2:      #d6d6d6;
-    --title1:   #393939;
+    --title1:   #434343;
     --title2:   #d5bbd3;
     --link1:    #8aabac;
     --link2:    #9ec3c4;
-    --code:     #303030;
-    --seltext:  #C7ECF7;
+    --code:     #393939;
   }
 }
 
@@ -160,7 +158,7 @@ time {
   text-decoration: none;
   text-align: center;
   display: block;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
   font-size: 3em;
   color: var(--fg1);
 }
@@ -175,7 +173,8 @@ time {
   margin-right: auto;
   margin-bottom: 30px;
   text-align: center;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
+  font-stretch: expanded;
   font-size: 1.3em;
 }
 
@@ -185,11 +184,12 @@ nav {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 95%;
+  width: 90%;
   padding-top: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 5px;
   margin-bottom: 1em;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
+  font-stretch: expanded;
   font-size: 1.2em;
   border-bottom: 5px solid var(--fg1);
 }
@@ -208,7 +208,7 @@ a:focus {
 
 /* Code */
 code {
-  font-family: "Fira Code", monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
 }
 
 p > code {
@@ -218,6 +218,7 @@ p > code {
   padding-bottom: 0.3em;
   margin-right: 0.1em;
   margin-left: 0.1em;
+  margin-top: -0.1em;
   font-size: 0.9em;
   color: var(--fg1);
   background-color: var(--code);
@@ -233,10 +234,10 @@ pre {
 	font-size: 16px;
 	line-height: 1.6;
   padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   margin-left: -5%;
-  border: 5px solid #424242;
+  border: 5px solid #5b5b5b;
   border-radius: 20px;
   overflow-x: auto;
 }
@@ -260,9 +261,9 @@ article {
   margin-top: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.65);
-  -moz-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.65);
-  box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.65);
+  -webkit-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.75);
+  box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.75);
 }
 
 /* Quotes */
@@ -312,4 +313,12 @@ table thead {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #636363;
+}
+
+/* mathjax support */
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
 }
